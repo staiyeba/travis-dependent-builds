@@ -11,6 +11,5 @@ script:
    - echo "LET's SKIP BUILD and TRIGGER test-ci-build"
 
 after_script:
-   - curl -LO https://raw.github.com/staiyeba/travis-dependent-builds/master/trigger.sh
    - chmod +x trigger.sh
    - ./trigger.sh staiyeba test-ci-build master $TRAVIS_ACCESS_TOKEN
