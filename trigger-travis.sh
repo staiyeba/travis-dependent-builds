@@ -37,7 +37,7 @@ BODY="{
   $MESSAGE
 }}"
 
-# make a POST request with curl (note %2F could be replaced with 
+# make a POST request with curl (note %2F could be replaced with
 # / and additional curl arguments, however this works too!)
 curl -s -X POST \
   -H "Content-Type: application/json" \
