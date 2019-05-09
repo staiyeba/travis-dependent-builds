@@ -14,7 +14,7 @@ travis login --skip-completion-check --github-token $TRAVIS_ACCESS_TOKEN
 travis whoami --skip-completion-check
 TOKEN=$(travis token --skip-completion-check)
 IFS=' ' read -r -a array <<< "$TOKEN"
-TOKEN=${array[${#array[@]}-1]}
+TOKEN=$(array[${#array[@]}-1])
 
 # inspired from plume-lib, check arguments and add message
 if [ $# -eq 5 ] ; then
