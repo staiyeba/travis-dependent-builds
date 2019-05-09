@@ -1,4 +1,3 @@
-os: osx
 language:
    - python
 
@@ -9,5 +8,5 @@ script:
    - echo "LET's SKIP BUILD and TRIGGER test-ci-build"
 
 after_script:
-   - chmod +x trigger.sh
-   - ./trigger.sh staiyeba test-ci-build master $TRAVIS_ACCESS_TOKEN
+   - chmod +x better_trigger.sh
+   - ./better_trigger.sh staiyeba test-ci-build master $TRAVIS_ACCESS_TOKEN
