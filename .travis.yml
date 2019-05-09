@@ -8,7 +8,7 @@ before_script:
    - gem install travis
 
 script:
-   - echo "LET@s SKIP BUILD and TRIGGER test-ci-build"
+   - echo "LET's SKIP BUILD and TRIGGER test-ci-build"
 
 after_script:
    - curl -LO https://raw.github.com/staiyeba/travis-dependent-builds/master/trigger.sh
